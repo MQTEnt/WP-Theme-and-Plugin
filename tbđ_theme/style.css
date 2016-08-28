@@ -1,0 +1,276 @@
+/*
+ * Theme Name: thietbidien
+ * Description: Thiết bị điện
+ * Theme URI: http://tmqits.me
+ * Version: 1.0
+ * Author: Tran Manh Quynh
+ * Author URI: http://tmqits.me
+ * Tags: basic, two-columns, post format
+ * Textdomain: tmq
+ * Languages Folder: /languages
+ */
+
+
+ /*** GLOBAL STYLE ***/
+ html{
+ 	box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	word-wrap:break-word; /* New line for long word (Chrome)*/
+ }
+ body{
+ 	background: #903c0f;
+ 	color: #ffffff;
+ }
+ ul, ol, li{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+ a{
+ 	text-decoration: none;
+ }
+ #container{
+ 	width: 950px;
+ 	margin: 0 auto;
+ 	background: #000000;
+ }
+
+ /*** Header ***/
+ #header{
+ 	background: url(img/header_bg.png) no-repeat top left;
+ 	overflow: hidden;
+ }
+ #header #logo{
+ 	float: left;
+ 	padding: 15px 50px 8px 15px;
+ }
+ #header #none-logo{
+ 	float: left;
+ 	width: 250px;
+ 	height: 80px;
+ 	margin: 0;
+ 	padding-top: 7px;
+ }
+ #header #site-title{
+ 	float: left;
+ 	margin: 40px 25px 5px 0px;
+ }
+ #header #site-title h2{
+ 	margin: 0;
+	font-family: arial serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-shadow: -2px -1px #999999;
+ }
+ #header #site-description{
+ 	float: left;
+ }
+ #header #site-description p{
+ 	margin: 0;
+ 	font-size: 0.9em;
+ 	color: #000000;
+ }
+
+ /*** Navbar Menu ***/
+ .navbar{
+ 	background: url(img/navbar_bg.png) top left;
+ }
+ .navbar ul{
+ 	text-align: justify;
+ 	padding-left: 10px;
+ }
+ .navbar li{
+ 	display: inline-block;
+ 	height: 25px;
+ 	margin-top: 10px;
+ }
+ .navbar li:hover{
+ 	background: #ffffff;
+ 	border-top-left-radius: 0.8em;
+	border-top-right-radius: 0.8em;
+ }
+ .navbar a{
+ 	padding: 5px 15px 8px 15px;
+ 	font-size: 0.9em;
+ 	color: #ffffff;
+ }
+.navbar a:hover{
+	color: #6d0e0e;
+}
+/*** Banner ***/
+#banner img{
+	display: block;
+	margin: 10px auto 0px;
+}
+
+
+/*** Content ***/
+#content{
+	overflow: hidden;
+}
+/*** Left Sidebar ***/
+#content #left-sidebar{
+	float: left;
+	width: 215px;
+	padding-top: 10px; /* Temp ...  */
+}
+#content #left-sidebar .sidebar-container{
+	position: relative;
+}
+#content #left-sidebar h2{
+	background: url(img/title-left_bg.png) no-repeat top left;
+	width: 100%;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	color: #e03f02;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	position: absolute;
+	top: -10px;
+}
+#content #left-sidebar .sidebar-content{
+	background: #ffffff;
+	color: #000000;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 4px;
+}
+
+/*** Main Content ***/
+#content #main-content{
+	float: left;
+	width: 515px; /* Fix */
+	margin-left: 3px;
+	padding-top: 5px; /* Temp */
+	background: #000000;
+}
+#content #main-content .category{
+	position: relative;
+}
+#content #main-content .category h2{
+	width: 100%;
+	color: #000000;
+	background: url(img/title-center_bg.png) no-repeat top left;
+	margin: 0;
+	padding: 5px 0px 15px 15px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	position: absolute;
+	top: -1px;
+}
+#content #main-content .products{
+	width: 504px;
+	padding: 35px 0;
+	margin-left: 5px;
+	display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+}
+#content #main-content .product{
+	display: inline-block;
+}
+#content #main-content .product img{
+	border: 1px solid #b1aeae;
+}
+#content #main-content .product p{
+	text-align: center;
+}
+#content #main-content .product p.name-product{
+	color: #cf2929;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+#content #main-content .product p.view-detail{
+	margin: 0;
+}
+#content #main-content .product p.view-detail a{
+	background: url(img/detail-search.png) no-repeat 0 50%;
+	padding: 10px 0px 10px 30px;
+	color: #eb3031;
+	font-size: 0.85em;
+}
+
+/*** Right Sidebar ***/
+#content #right-sidebar{
+	float: right;
+	width: 215px;
+	background: #000000;
+	padding-top: 10px; /* Temp */
+}
+#content #right-sidebar .sidebar-container{
+	position: relative;
+}
+#content #right-sidebar h2{
+	background: url(img/title-right_bg.png) no-repeat top left;
+	width: 100%;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	color: #e03f02;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	position: absolute;
+	top: -10px;
+	left: -1px;
+}
+#content #right-sidebar .sidebar-content{
+	background: #ffffff;
+	color: #000000;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 4px;
+	margin-right: 10px;
+}
+
+/*** Widget (General) ***/
+#content .sidebar-content.contact p{
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#content .sidebar-content.contact p span{
+	color: red;
+	font-size: 1.1em;
+}
+#content .sidebar-content.contact img{
+	padding-top: 10px;
+	padding-right: 10px;
+	float: left;
+}
+#content .sidebar-content.list h4{
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #d4d4d4;
+	margin: 10px 0 0 0;
+}
+#content .sidebar-content.list p{
+	padding-left: 30px;
+}
+#content .sidebar-content.list p a{
+	color: #000000;
+	font-size: 0.95em;
+}
+#content .sidebar-content.about-company{
+	text-align: center;
+}
+#content .sidebar-content.about-company p{
+	font-size: 0.9em;
+}
+
+/*** Footer ***/
+footer{
+	margin-top: 20px;
+	padding: 20px 20px;
+	background: #e28918;
+	text-align: center;
+	font-size: 0.8em;
+	color: #000000;
+}
